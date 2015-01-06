@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Users/tkeena/AndroidStudioProjects/NavigationDrawer1/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string-array name="settings_array">
+        <item>Home</item>
+        <item>Children</item>
+        <item>Carers</item>
+        <item>Useful Web Links</item>
+        <item>Reminders</item>
+        <item>Monthly Feedback</item>
+        <item>My Details</item>
+
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+    <string name="app_name">Brain Injury Recovery</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="settingsBtn">Settings</string>
+    <string name="text_drawer_open">Settings</string>
+</resources>

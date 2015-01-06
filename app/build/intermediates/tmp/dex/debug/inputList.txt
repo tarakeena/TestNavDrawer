@@ -1,0 +1,4 @@
+C:\Users\tkeena\AndroidStudioProjects\NavigationDrawer1\app\build\intermediates\classes\debug
+C:\Users\tkeena\AndroidStudioProjects\NavigationDrawer1\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-63492aa1806b61bf3fc5a7e0d5d7ab5e8f12b4c2.jar
+C:\Users\tkeena\AndroidStudioProjects\NavigationDrawer1\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-625aafbe6c393af9aaa8e6d92851b27bf15c687d.jar
+C:\Users\tkeena\AndroidStudioProjects\NavigationDrawer1\app\build\intermediates\pre-dexed\debug\classes-cf0eccf3bb9dd62825caa8475a0f795350422bdb.jar

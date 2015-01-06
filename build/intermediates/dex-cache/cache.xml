@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\tkeena\AndroidStudioProjects\NavigationDrawer1\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="C:\Users\tkeena\AndroidStudioProjects\NavigationDrawer1\app\build\intermediates\pre-dexed\debug\classes-cf0eccf3bb9dd62825caa8475a0f795350422bdb.jar" />
+    </item>
+    <item
+        jar="C:\Users\tkeena\AndroidStudioProjects\NavigationDrawer1\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="C:\Users\tkeena\AndroidStudioProjects\NavigationDrawer1\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-625aafbe6c393af9aaa8e6d92851b27bf15c687d.jar" />
+    </item>
+    <item
+        jar="C:\Users\tkeena\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="C:\Users\tkeena\AndroidStudioProjects\NavigationDrawer1\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-63492aa1806b61bf3fc5a7e0d5d7ab5e8f12b4c2.jar" />
+    </item>
+
+</items>
