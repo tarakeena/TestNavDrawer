@@ -3,7 +3,7 @@
     <!-- From: file:/C:/Users/tkeena/AndroidStudioProjects/NavigationDrawer1/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string-array name="settings_array">
-        <item>Home</item>
+
         <item>Children</item>
         <item>Carers</item>
         <item>Useful Web Links</item>

@@ -4,7 +4,7 @@
     <string name="app_name">Recovery after a Brain Injury </string>
 
     <string-array name="settings_array">
-        <item>Home</item>
+
         <item>Children</item>
         <item>Carers</item>
         <item>Useful Web Links</item>

@@ -20,7 +20,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 
-
 public class MainActivity extends Activity {
     private DrawerLayout mDrawerLayout;
     private ListView mDrawerList;
@@ -35,7 +34,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mTitle = mDrawerTitle = getTitle();
+       //mTitle = mDrawerTitle = getTitle();
         mTitles = getResources().getStringArray(R.array.settings_array);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mDrawerList = (ListView) findViewById(R.id.right_drawer);
@@ -61,7 +60,10 @@ public class MainActivity extends Activity {
                 R.drawable.ic_drawer,  /* nav drawer image to replace 'Up' caret */
                 R.string.drawer_open,  /* "open drawer" description for accessibility */
                 R.string.drawer_close  /* "close drawer" description for accessibility */
-                ) {
+                )
+        {
+
+        /**{
             public void onDrawerClosed(View view) {
                 getActionBar().setTitle(mTitle);
                 invalidateOptionsMenu(); // creates call to onPrepajreOptionsMenu()
@@ -70,7 +72,7 @@ public class MainActivity extends Activity {
             public void onDrawerOpened(View drawerView) {
                 getActionBar().setTitle(mDrawerTitle);
                 invalidateOptionsMenu(); // creates call to onPrepareOptionsMenu()
-            }
+            }**/
         };
         mDrawerLayout.setDrawerListener(mDrawerToggle);
 
@@ -152,30 +154,32 @@ public class MainActivity extends Activity {
 
 **/
     //to launch a new activity on navigation drawer selection
+
+    //added case 0 ??
     private void selectItem(final int position) {
         switch(position) {
-            case 1:
+            case 0:
                 Intent a = new Intent(this, MainActivity2.class);
                 startActivity(a);
                 break;
-            case 2:
+            case 1:
                 Intent b = new Intent(this, MainActivity3.class);
                 startActivity(b);
                 break;
-            case 3:
+            case 2:
                 Intent c = new Intent(this, MainActivity3.class);
                 startActivity(c);
                 break;
-            case 4:
+            case 3:
                 Intent d = new Intent(this, MainActivity2.class);
                 startActivity(d);
                 break;
-            case 5:
+            case 4:
                 Intent e = new Intent(this, MainActivity2.class);
                 startActivity(e);
                 break;
-            case 6:
-                Intent f = new Intent(this, MainActivity2.class);
+            case 5:
+                Intent f = new Intent(this, MainActivity3.class);
                 startActivity(f);
                 break;
             default:
@@ -190,24 +194,28 @@ public class MainActivity extends Activity {
 
 
 
-
+/**
     @Override
     public void setTitle(CharSequence title) {
         mTitle = title;
         getActionBar().setTitle(mTitle);
     }
-
+**/
     /**
      * When using the ActionBarDrawerToggle, you must call it during
     * onPostCreate() and onConfigurationChanged()...
             */
 
+    /**
     @Override
     protected void onPostCreate(Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
         // Sync the toggle state after onRestoreInstanceState has occurred.
         mDrawerToggle.syncState();
     }
+    **/
+
+    /**
 
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
@@ -215,7 +223,7 @@ public class MainActivity extends Activity {
         // Pass any configuration change to the drawer toggls
         mDrawerToggle.onConfigurationChanged(newConfig);
     }
-
+**/
 
 
 
