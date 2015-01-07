@@ -3,8 +3,8 @@ package com.example.android.navigationdrawerexample;
 import java.util.Locale;
 
 import android.app.Activity;
-import android.app.Fragment;
-import android.app.FragmentManager;
+
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
@@ -20,28 +20,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 
-/**
 
- * Items within the drawer should fall into one of two categories:</p>
- * <p/>
- * <ul>
- * <li><strong>View switches</strong>. A view switch follows the same basic policies as
- * list or tab navigation in that a view switch does not create navigation history.
- * This pattern should only be used at the root activity of a task, leaving some form
- * of Up navigation active for activities further down the navigation hierarchy.</li>
- * <li><strong>Selective Up</strong>. The drawer allows the user to choose an alternate
- * parent for Up navigation. This allows a user to jump across an app's navigation
- * hierarchy at will. The application should treat this as it treats Up navigation from
- * a different task, replacing the current task stack using TaskStackBuilder or similar.
- * This is the only form of navigation drawer that should be used outside of the root
- * activity of a task.</li>
- * </ul>
- * <p/>
- * <p>Right side drawers should be used for actions, not navigation. This follows the pattern
- * established by the Action Bar that navigation should be to the left and actions to the right.
- * An action should be an operation performed on the current contents of the window,
- * for example enabling or disabling a data overlay on top of the current content.</p>
- */
 public class MainActivity extends Activity {
     private DrawerLayout mDrawerLayout;
     private ListView mDrawerList;
@@ -111,7 +90,7 @@ public class MainActivity extends Activity {
     @Override
     public boolean onPrepareOptionsMenu(Menu menu) {
         // If the nav drawer is open, hide action items related to the content view
-        boolean drawerOpen = mDrawerLayout.isDrawerOpen(mDrawerList);
+       // boolean drawerOpen = mDrawerLayout.isDrawerOpen(mDrawerList);
         //menu.findItem(R.id.action_websearch).setVisible(!drawerOpen);
         return super.onPrepareOptionsMenu(menu);
     }
@@ -146,15 +125,14 @@ public class MainActivity extends Activity {
     **/
 
 
-
-    /* The click listner for ListView in the navigation drawer */
-    private class DrawerItemClickListener implements ListView.OnItemClickListener {
+    //The click listner for ListView in the navigation drawer
+   private class DrawerItemClickListener implements ListView.OnItemClickListener {
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
             selectItem(position);
         }
     }
-
+/**
     private void selectItem(int position) {
         // update the main content by replacing fragments
         Fragment fragment = new PlanetFragment();
@@ -169,7 +147,49 @@ public class MainActivity extends Activity {
         mDrawerList.setItemChecked(position, true);
         setTitle(mTitles[position]);
         mDrawerLayout.closeDrawer(mDrawerList);
+
     }
+
+**/
+    //to launch a new activity on navigation drawer selection
+    private void selectItem(final int position) {
+        switch(position) {
+            case 1:
+                Intent a = new Intent(this, MainActivity2.class);
+                startActivity(a);
+                break;
+            case 2:
+                Intent b = new Intent(this, MainActivity3.class);
+                startActivity(b);
+                break;
+            case 3:
+                Intent c = new Intent(this, MainActivity3.class);
+                startActivity(c);
+                break;
+            case 4:
+                Intent d = new Intent(this, MainActivity2.class);
+                startActivity(d);
+                break;
+            case 5:
+                Intent e = new Intent(this, MainActivity2.class);
+                startActivity(e);
+                break;
+            case 6:
+                Intent f = new Intent(this, MainActivity2.class);
+                startActivity(f);
+                break;
+            default:
+        }
+
+        /**
+        mDrawerList.setItemChecked(position, true);
+        //setTitle(mTitles[position]);
+        mDrawerLayout.closeDrawer(mDrawerList);**/
+    }
+
+
+
+
 
     @Override
     public void setTitle(CharSequence title) {
@@ -205,6 +225,8 @@ public class MainActivity extends Activity {
     /**
      * Fragment that appears in the "content_frame", shows a planet
      */
+
+    /**
     public static class PlanetFragment extends Fragment {
         public static final String ARG_PLANET_NUMBER = "planet_number";
 
@@ -226,4 +248,5 @@ public class MainActivity extends Activity {
             return rootView;
         }
     }
+        **/
 }
